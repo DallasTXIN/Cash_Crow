@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity() {
         appBarConfiguration = AppBarConfiguration(navController.graph)
         setupActionBarWithNavController(navController, appBarConfiguration)
 
+        //This is the functioning part of the dollar sign in the bottom right corner.
         binding.fab.setOnClickListener { view ->
             Snackbar.make(view, "Pressing This Does Nothing Right Now. Find A Way To Replace This Function.", Snackbar.LENGTH_LONG)
                 .setAction("Action", null)
