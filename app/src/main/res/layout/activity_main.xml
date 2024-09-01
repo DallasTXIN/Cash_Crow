@@ -8,6 +8,7 @@
     tools:context=".MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fitsSystemWindows="true">
@@ -17,6 +18,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize" />
+        <!--DO NOT GET RID OF! IT HELPS RUN THE APP!-->
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -31,5 +33,6 @@
         android:layout_marginEnd="@dimen/fab_margin"
         android:layout_marginBottom="16dp"
         app:srcCompat="@drawable/baseline_attach_money_24"/>
+    <!--This is the design of the dollar sign in the bottom right corner.-->
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

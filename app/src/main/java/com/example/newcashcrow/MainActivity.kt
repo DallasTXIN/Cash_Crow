@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
 
         //DO NOT GET RID OF! IT HELPS RUN THE APP!
         setSupportActionBar(binding.toolbar)
+        //DO NOT GET RID OF! IT HELPS RUN THE APP!
 
         val navController = findNavController(R.id.nav_host_fragment_content_main)
         appBarConfiguration = AppBarConfiguration(navController.graph)
@@ -35,5 +36,6 @@ class MainActivity : AppCompatActivity() {
                 .setAction("Action", null)
                 .setAnchorView(R.id.fab).show()
         }
+        //This is the functioning part of the dollar sign in the bottom right corner.
     }
 }
