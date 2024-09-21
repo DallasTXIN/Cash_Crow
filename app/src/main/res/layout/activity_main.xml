@@ -17,7 +17,8 @@
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize" />
+            android:layout_height="match_parent" />
+
         <!--DO NOT GET RID OF! IT HELPS RUN THE APP!-->
 
     </com.google.android.material.appbar.AppBarLayout>
@@ -35,15 +36,15 @@
         app:srcCompat="@drawable/baseline_attach_money_24"/>
     <!--This is the design of the dollar sign in the bottom right corner.-->
 
-    <!--This is the design of the dollar sign in the bottom right corner.-->
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
+    <!--This is the design of the help button in the top right corner.-->
+    <Button
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_marginEnd="@dimen/fab_margin"
-        android:layout_marginBottom="16dp"
-        app:srcCompat="@drawable/baseline_attach_money_24"/>
-    <!--This is the design of the dollar sign in the bottom right corner.-->
+        android:layout_gravity="top|right"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Help"/>
+    <!--This is the design of the help button in the top right corner.-->
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

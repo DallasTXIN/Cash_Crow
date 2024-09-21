@@ -37,5 +37,13 @@ class MainActivity : AppCompatActivity() {
                 .setAnchorView(R.id.fab).show()
         }
         //This is the functioning part of the dollar sign in the bottom right corner.
+
+        //This is the design of the help button in the top right corner.
+        binding.button.setOnClickListener { view ->
+            Snackbar.make(view, "Pressing This Does Nothing Right Now. Find A Way To Replace This Function.", Snackbar.LENGTH_LONG)
+                .setAction("Action", null)
+                .setAnchorView(R.id.fab).show()
+        }
+        //This is the design of the help button in the top right corner.
     }
 }
