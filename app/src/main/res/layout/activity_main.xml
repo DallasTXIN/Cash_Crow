@@ -13,17 +13,21 @@
         android:layout_height="wrap_content"
         android:fitsSystemWindows="true">
 
-        <!--DO NOT GET RID OF! IT HELPS RUN THE APP!-->
+        <!--DO NOT GET RID OF THESE! IT HELPS RUN THE APP!-->
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="80dp"/>
 
-        <!--DO NOT GET RID OF! IT HELPS RUN THE APP!-->
+        <View
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="337dp"/>
+        <!--DO NOT GET RID OF THESE! THEY HELP RUN THE APP!-->
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <include layout="@layout/content_main" />
+    <include layout="@layout/content_main"/>
 
     <!--This is the design of the dollar sign in the bottom right corner.-->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -36,7 +40,7 @@
         app:srcCompat="@drawable/baseline_attach_money_24"/>
     <!--This is the design of the dollar sign in the bottom right corner.-->
 
-    <!--This is the design of the help button in the top right corner.-->
+    <!--Idk how any of this is working in the app. I'm not gonna question it all.-->
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
@@ -45,6 +49,40 @@
         android:layout_marginRight="16dp"
         android:layout_marginTop="16dp"
         android:text="Help"/>
-    <!--This is the design of the help button in the top right corner.-->
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_anchor="@+id/appBarLayout"
+        app:layout_anchorGravity="bottom|center"/>
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_anchor="@+id/appBarLayout"
+        app:layout_anchorGravity="center"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Salary Here To The Nearest Dollar:"
+        app:layout_anchor="@+id/editTextNumber2"
+        app:layout_anchorGravity="top|center"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Expenses Here To The Nearest Dollar:"
+        app:layout_anchor="@+id/editTextNumber"
+        app:layout_anchorGravity="top|center"/>
+    <!--Idk how any of this is working in the app. I'm not gonna question it all.-->
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

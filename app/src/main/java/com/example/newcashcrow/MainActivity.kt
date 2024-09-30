@@ -22,9 +22,9 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        //DO NOT GET RID OF! IT HELPS RUN THE APP!
+        //DO NOT GET RID OF THIS! IT HELPS RUN THE APP!
         setSupportActionBar(binding.toolbar)
-        //DO NOT GET RID OF! IT HELPS RUN THE APP!
+        //DO NOT GET RID OF THIS! IT HELPS RUN THE APP!
 
         val navController = findNavController(R.id.nav_host_fragment_content_main)
         appBarConfiguration = AppBarConfiguration(navController.graph)
