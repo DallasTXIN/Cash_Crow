@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
 
         //This is the design of the help button in the top right corner.
         binding.button.setOnClickListener { view ->
-            Snackbar.make(view, "Pressing This Does Nothing Right Now. Find A Way To Replace This Function.", Snackbar.LENGTH_LONG)
+            Snackbar.make(view, "This Is The Help Button. Try Fixing This Before Adding Stuff In.", Snackbar.LENGTH_LONG)
                 .setAction("Action", null)
                 .setAnchorView(R.id.fab).show()
         }

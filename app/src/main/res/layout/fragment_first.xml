@@ -9,5 +9,58 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="16dp"/>
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Help"
+            tools:layout_editor_absoluteX="160dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="700dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="1dp"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Purpose Of The App"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="125dp"
+            tools:layout_editor_absoluteY="100dp"/>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The purpose of this app is to help you manage your finances. This might not be the best looking app or the best programmed app, but it definitely will help make sure you don't excessively spend and to save money."
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="125dp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Preferences"
+            tools:layout_editor_absoluteX="140dp"
+            tools:layout_editor_absoluteY="250dp"/>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The preferences in the app help make sure that your info is saved. Not only that, but if you need to update your information, you're able to just by tapping at those keys."
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="275dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>
+
+<!--The preferences in the app help make sure that your info is saved. Not only that, but if you need to update your information, you're able to just by tapping at those keys.-->

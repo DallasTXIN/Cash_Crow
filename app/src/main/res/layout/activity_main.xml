@@ -14,15 +14,11 @@
         android:fitsSystemWindows="true">
 
         <!--DO NOT GET RID OF THESE! IT HELPS RUN THE APP!-->
-        <com.google.android.material.appbar.MaterialToolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"/>
 
         <View
             android:id="@+id/view"
             android:layout_width="wrap_content"
-            android:layout_height="337dp"/>
+            android:layout_height="402dp" />
         <!--DO NOT GET RID OF THESE! THEY HELP RUN THE APP!-->
 
     </com.google.android.material.appbar.AppBarLayout>
@@ -70,6 +66,7 @@
 
     <TextView
         android:id="@+id/textView2"
+        android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Enter Salary Here To The Nearest Dollar:"
@@ -78,11 +75,19 @@
 
     <TextView
         android:id="@+id/textView3"
+        android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Enter Expenses Here To The Nearest Dollar:"
         app:layout_anchor="@+id/editTextNumber"
         app:layout_anchorGravity="top|center"/>
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="281dp"
+        android:layout_height="80dp"
+        app:layout_anchor="@+id/appBarLayout"
+        app:layout_anchorGravity="end|top" />
     <!--Idk how any of this is working in the app. I'm not gonna question it all.-->
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
