@@ -18,7 +18,8 @@
         <View
             android:id="@+id/view"
             android:layout_width="wrap_content"
-            android:layout_height="402dp" />
+            android:layout_height="402dp"/>
+
         <!--DO NOT GET RID OF THESE! THEY HELP RUN THE APP!-->
 
     </com.google.android.material.appbar.AppBarLayout>
@@ -33,7 +34,7 @@
         android:layout_gravity="bottom|end"
         android:layout_marginEnd="@dimen/fab_margin"
         android:layout_marginBottom="16dp"
-        app:srcCompat="@drawable/baseline_attach_money_24"/>
+        app:srcCompat="@drawable/baseline_attach_money_24" />
     <!--This is the design of the dollar sign in the bottom right corner.-->
 
     <!--Idk how any of this is working in the app. I'm not gonna question it all.-->
@@ -42,9 +43,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="top|right"
-        android:layout_marginRight="16dp"
         android:layout_marginTop="16dp"
-        android:text="Help"/>
+        android:layout_marginRight="16dp"
+        android:text="Help"
+        android:visibility="visible"
+        tools:visibility="visible"/>
 
     <EditText
         android:id="@+id/editTextNumber"
@@ -66,28 +69,29 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Enter Salary Here To The Nearest Dollar:"
+        android:textStyle="bold"
         app:layout_anchor="@+id/editTextNumber2"
         app:layout_anchorGravity="top|center"/>
 
     <TextView
         android:id="@+id/textView3"
-        android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Enter Expenses Here To The Nearest Dollar:"
+        android:textStyle="bold"
         app:layout_anchor="@+id/editTextNumber"
         app:layout_anchorGravity="top|center"/>
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/toolbar"
-        android:layout_width="281dp"
-        android:layout_height="80dp"
+        android:layout_width="142dp"
+        android:layout_height="138dp"
         app:layout_anchor="@+id/appBarLayout"
-        app:layout_anchorGravity="end|top" />
+        app:layout_anchorGravity="top|center" />
+
     <!--Idk how any of this is working in the app. I'm not gonna question it all.-->
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
