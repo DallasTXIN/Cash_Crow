@@ -91,7 +91,6 @@
         android:layout_height="138dp"
         app:layout_anchor="@+id/appBarLayout"
         app:layout_anchorGravity="top|center" />
-
     <!--Idk how any of this is working in the app. I'm not gonna question it all.-->
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
